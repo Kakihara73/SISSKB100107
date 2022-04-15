@@ -8,7 +8,7 @@ IF "%dominio%"=="NOME DOMINIO" GOTO dom
 NET USE %sorgenti% /u:<UTENZA PER ACCESSO ALLA CARTELLA> PASSWORD
 :dom
 ECHO.
-IF NOT EXIST C:\AppSISS\SISS>PdL_Info.exe GOTO nosiss
+IF NOT EXIST C:\AppSISS\SISS\PdL_Info.exe GOTO nosiss
 FOR /f "tokens=2 delims={}" %%p in ('REG QUERY HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall /f java /s') DO IF "%%p"=="26A24AE4-039D-4CA4-87B4-2F83216030FF" SET cj=OK
 IF "%cj%" NEQ "OK" GOTO nojava
 ROBOCOPY %sorgenti%\%kb% %destinazione%\%kb% /E
