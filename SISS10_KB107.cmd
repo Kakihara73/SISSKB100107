@@ -1,11 +1,11 @@
 @ECHO OFF
 SET cj=
-SET sorgenti=\\ich.techosp.it\Programmi$\Programs\DRIVERS\IFI\SILENT\SISS10
+SET sorgenti=PERCORSO DI RETE COMPLETO DOVE SI TROVA LA CARTELLA KB100107>
 SET destinazione=c:\Windows\Temp\SISS10
 SET kb=KB100107
 FOR /F "delims=\" %%j in ('whoami') do SET dominio=%%j
-IF "%dominio%"=="humanitas" GOTO dom
-NET USE %sorgenti% /u:humanitas\execute Hum6245$
+IF "%dominio%"=="NOME DOMINIO" GOTO dom
+NET USE %sorgenti% /u:<UTENZA PER ACCESSO ALLA CARTELLA> PASSWORD
 :dom
 ECHO.
 IF NOT EXIST C:\AppSISS\SISS>PdL_Info.exe GOTO nosiss
@@ -28,7 +28,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO.
-ECHO ...::::: INSTALLAZIONE KB 100107 		      :::::...
+ECHO ...::::: INSTALLAZIONE KB 100107 		            :::::...
 ECHO.
 ECHO.
 ECHO.
