@@ -1,5 +1,5 @@
 @ECHO OFF
-SET sorgenti=\\ich.techosp.it\Programmi$\Programs\DRIVERS\IFI\SILENT\SISS10\KB100107
+SET sorgenti=<PERCORSO COMPLETO DOVE SI TROVANO I 2 FILE PER LA KB>
 COPY /Y %sorgenti%\SISSKB100107.* \\%1\c$\AppSISS\SISS\Update
 IF %ERRORLEVEL% NEQ 0 GOTO err
 IF EXIST \\%1\c$\IDVER GOTO attesa
