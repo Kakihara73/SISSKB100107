@@ -1,6 +1,6 @@
 @ECHO OFF
 SET cj=
-SET sorgenti=PERCORSO DI RETE COMPLETO DOVE SI TROVA LA CARTELLA KB100107>
+SET sorgenti=<PERCORSO DI RETE COMPLETO DOVE SI TROVA LA CARTELLA KB100107>
 SET destinazione=c:\Windows\Temp\SISS10
 SET kb=KB100107
 FOR /F "delims=\" %%j in ('whoami') do SET dominio=%%j
