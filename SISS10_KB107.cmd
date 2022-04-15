@@ -28,7 +28,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO.
-ECHO ...::::: INSTALLAZIONE KB 100107 		            :::::...
+ECHO ...::::: INSTALLAZIONE KB 100107 		      :::::...
 ECHO.
 ECHO.
 ECHO.
